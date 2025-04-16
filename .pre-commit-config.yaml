@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: MIT License
+#
+
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        # Use the config file specific to each subproject so that each
+        # project can specify its own first/third-party packages.
+        args: ["--config-root=python/", "--resolve-all-configs"]
+        files: ^(.*)
+        types_or: [python, cython, pyi]
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        files: ^(.*)
+        # Explicitly specify the pyproject.toml at the repo root, not per-project.
+        args: ["--config", "pyproject.toml", "--target-version", "py310"]
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+        args: ["--config=.flake8"]
+        files: .*$
+        types: [file]
+        types_or: [python, cython]
+        additional_dependencies: ["flake8-force"]
+default_language_version:
+      python: python3
