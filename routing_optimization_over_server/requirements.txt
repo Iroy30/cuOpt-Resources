@@ -1,5 +1,6 @@
 # NVIDIA cuOpt SDK
 cuopt-server>=25.05.0
+cuopt-sh-client>=25.05.0
 
 # Jupyter environment
 jupyter
