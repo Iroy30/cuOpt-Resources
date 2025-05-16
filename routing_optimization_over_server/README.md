@@ -2,8 +2,6 @@
 
 Contains a collection of Jupyter Notebooks that outline how cuOpt self hosted service can be used to solve a wide variety of problems.
 
-To use these notebooks, you need to install [cuopt-sh-client](https://registry.ngc.nvidia.com/orgs/j9mrpofbmtxd/teams/cuopt_self_hosted/resources/cuopt-self-hosted-client) available in NGC in Resources tab.
-
 ## Summary
 Each notebook represents an example use case for NVIDIA cuOpt. All notebooks demonstrate high level problem modeling leveraging the cuOpt self hosted service.  In addition, each notebook covers additional cuOpt features listed below alongside notebook descriptions
 
