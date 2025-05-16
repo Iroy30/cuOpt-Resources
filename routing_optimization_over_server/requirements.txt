@@ -1,0 +1,10 @@
+# NVIDIA cuOpt SDK
+cuopt-server>=25.05.0
+
+# Jupyter environment
+jupyter
+notebook
+ipykernel
+
+# Style
+pre-commit
