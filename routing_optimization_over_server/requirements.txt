@@ -1,4 +1,4 @@
-# NVIDIA cuOpt SDK
+# NVIDIA cuOpt Self Hosted Client and Server
 cuopt-server>=25.05.0
 cuopt-sh-client>=25.05.0
 
